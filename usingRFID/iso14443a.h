@@ -15,7 +15,6 @@ extern "C"{
 #include <sys/select.h>
 #include <stdlib.h>
 #include <signal.h>
-#include <unistd.h>
 #include <netdb.h>
 #include <string.h>
 #include <errno.h>

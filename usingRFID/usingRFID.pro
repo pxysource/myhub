@@ -5,6 +5,8 @@
 #-------------------------------------------------
 
 QT       += core gui
+QT       += sql
+QT       += network
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -25,11 +27,17 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
         main.cpp \
-        widget.cpp
+        widget.cpp \
+    crfid.c \
+    rfid.cpp \
+    sqlopt.cpp \
+    parkinformation.cpp \
+    tcpclient.cpp
 
 HEADERS += \
         widget.h \
-    iso14443a.h
+    iso14443a.h \
+    crfid.h
 
 FORMS += \
         widget.ui
